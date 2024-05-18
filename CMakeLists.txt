@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.28)
+project(test1ForClion)
+set(CMAKE_CXX_STANDARD 17)
+find_package(OpenCV REQUIRED)
+INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
+add_executable(test1ForClion main.cpp)
+TARGET_LINK_LIBRARIES(test1ForClion ${OpenCV_LIBS})
